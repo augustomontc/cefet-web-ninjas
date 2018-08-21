@@ -1,0 +1,28 @@
+h1{
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  color: blue;
+}
+
+.destacado {
+  font-weight: bold;
+}
+
+body {
+  background: url("img/fundo.jpg") no-repeat fixed;
+  /*background-position: top left; */ /* este já é o valor padrão */
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logotipo {
+  width: 200px;
+}
