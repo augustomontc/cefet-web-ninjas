@@ -1,28 +1,82 @@
 h1{
-  color: red;
+  text-shadow: 1px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  color: purple;
   font-size: 36px;
-  font-weight: bold;
+  font-family: Arial;
+  text-align: center;
+}
+
+h2 {
+  text-shadow: 1px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-size:24px;
+  font-family: Arial;
 }
 
 p {
-  color: blue;
+  color: white;
+  font-family: serif;
+  text-align: justify;
 }
 
-.destacado {
-  font-weight: bold;
+ol, em, ul {
+  color: pink;
+  font-family: serif;
+  text-align: justify;
 }
 
 body {
-  background: url("img/fundo.jpg") no-repeat fixed;
-  /*background-position: top left; */ /* este já é o valor padrão */
+  margin: 0px 200px 20px 200px;
+  padding: 20px;
+  background-color: black;
+  border: black solid 2px;
 }
 
-img {
+img:not(.bgimg), iframe {
+  border: black solid 3px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+a:link {
+    color: purple;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: peru;
+    font-weight: bold;
+}
+
+a:active {
+    color: blue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a[href^="http"] {
+    background-image: url(../img/globo.png);
+    background-repeat: no-repeat;
+    padding-left:20px;
+}
+
+.bgimg {
+  margin: 0px 0px;
+  padding: 100px;
+  background-image: url("img/fundo.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 #logotipo {
+  border: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
 }
